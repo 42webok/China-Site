@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#head{
+    border-top: 1px solid black;
+    margin-top: 8px;
+    align-items: center;
+}
+#head .logo img{
+    mix-blend-mode: multiply;
+   }
+#first-head{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#sec-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#head .search-bar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#head .search-bar i{
+    position: absolute;
+    right: 30px;
+    top: 29px;
+    font-size: 12px;
+}
+#head .search-bar input{
+    width: 250px;
+    height: 33px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 18px;
+    background-color: ghostwhite;
+    border: 1px solid gray;
+    outline: none;
+}
+#head .search-bar a{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+#head .search-bar a:nth-child(2){
+    color: gray;
+}
+#head  #message{
+    position: relative;
+}
+#head  #message span{
+    position: absolute;
+    background-color: rgb(241, 241, 241);
+    border-radius: 50%;
+    padding: 4px;
+    z-index: 10;
+    font-size: 10px;
+    color: black;
+    top: -10px;
+    right: -8px;
+    border: 1px solid rgb(90, 88, 88);
+}
+#head .btn{
+    margin-left: 13px;
+    width: 130px;
+    font-weight: 500;
+    outline: none;
+    box-shadow: 1px 1px 3px rgba(54, 54, 54, 0.37);
+}
+#head .btn:nth-child(3){
+    width: 180px;
+}
+
+/* ===================text==================== */
+#text{
+    background-color: black;
+    color: white;
+}
+#text-2{
+    font-weight: 600;
+}
+/* ================Menu=============== */
+#menu{
+    /* border: 1px solid red; */
+    /* background-color: black; */
+    border-radius: 8px;
+}
+
+#menu .col-lg-2 , .cot{
+    border-right: 1px solid rgb(146, 144, 144);
+}
+#btn-1{
+    background-color: #131414;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right: 1px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+#btn-2, #btn-3 , #btn-4{
+    background-color: #131414;
+    display: flex;
+    align-items: center;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.dropdown i{
+    font-size: 14px;
+}
+
+/* Button styling */
+.dropbtn {
+    background-color: #131414;
+    color: white;
+    padding: 6px 12px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    margin-top: 2px;
+    display: none;
+    position: absolute;
+    background-color: #242424;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(224, 224, 224, 0.432);
+    z-index: 1;
+    overflow: auto;
+    height: 330px;
+}
+.dropdown-content::-webkit-scrollbar{
+    width: 6px;
+    border-radius: 15px;
+    background-color: rgb(126, 124, 124);
+}
+.dropdown-content2{
+    min-width: 200px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(161, 158, 158);
+    padding: 6px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+/* Change link color on hover */
+.dropdown-content a:hover {
+    color: #ffffff;
+}
+
+/* Show the dropdown content when button is clicked */
+.show {
+    display: block;
+}
+
+/* ===== */
+#danger{
+    background-color: red;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+#danger .btn{
+    width: 100%;
+    background-color: red;
+    border: none;
+    outline: none;
+}
+#reset {
+    display: flex;
+    align-items: center;
+}
+#reset button{
+    outline: none;
+    border: 1px solid black;
+    padding: 1px 19px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.288);
+}
+#reset button:hover{
+    margin-top: -2px;
+    transition: all.3s ease;
+}
+
+
+.card{
+    position: relative;
+}
+.card i{
+    position: absolute;
+    top: 50%;
+}
+.card .image{
+    background-color: rgb(236, 236, 236);
+}
+.card .card-body{
+    line-height: 14px;
+}
+.card  h5{
+    font-weight: bold;
+}
+.card .txt{
+    font-weight: 600;
+    color: rgb(104, 103, 103);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =====================Break points================== */
+@media (max-width: 492px){
+    /* body{
+        background-color: red;
+    } */
+    #first-head{
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #text h2{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    #head .search-bar input{
+        width: 200px;
+        height: 33px;
+        padding: 10px;
+        margin: 10px;
+    }
+    #head .search-bar a{
+        font-size: 15px;
+    }
+    #head .search-bar i{
+        position: absolute;
+        right: 30px;
+        top: 21px;
+        font-size: 12px;
+    }
+    #sec-head{
+        flex-wrap: wrap;
+    }
+    #sec-head .btn{
+        margin-bottom: 10px;
+        width: 150px;
+    }
+    #menu .set{
+        margin-top: 5px;
+        border-radius: 8px;
+    }
+    .dropdown-content {
+        min-width: 260px;
+    }
+    .dropdown-content a {
+        text-align: center;
+    }
+}
+
+@media (min-width: 491px) and (max-width: 574px){
+    /* body{
+        background-color:rgb(30, 136, 230);
+    } */
+  
+    #head .search-bar input{
+        width: 200px;
+        height: 33px;
+        padding: 10px;
+        margin: 10px;
+    }
+    #head .search-bar a{
+        font-size: 15px;
+    }
+    #head .search-bar i{
+        position: absolute;
+        right: 30px;
+        top: 21px;
+        font-size: 12px;
+    }
+    #sec-head{
+        margin-top: 10px;
+    }
+    #head .button #message span{
+        position: absolute;
+        padding: 4px;
+        z-index: 10;
+        top: -10px;
+        right: -8px;
+    }
+    #head .button .btn{
+        margin-left: 13px;
+        width: 110px;
+        font-weight: 500;
+        outline: none;
+        box-shadow: 1px 1px 3px rgb(54, 54, 54);
+    }
+    #head .button .btn:nth-child(3){
+        width: auto;
+    }
+    #text h2{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    #menu .set{
+        margin-top: 5px;
+        border-radius: 8px;
+    }
+    .dropdown-content {
+        min-width: 450px;
+    }
+    .dropdown-content a {
+        text-align: center;
+    }
+    }
+
+    @media (min-width: 575px) and (max-width: 991px) {
+       /* body{
+        background-color: blueviolet;
+       } */
+       #head .btn:nth-child(3){
+        width: auto;
+    }
+    #first-head{
+        margin-bottom: 10px;
+    }
+    #sec-head{
+        margin-top: 20px;
+    }
+    #text h2{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    #menu .set{
+        margin-top: 5px;
+        border-radius: 8px;
+    }
+    .dropdown-content {
+        min-width: 200px;
+    }
+    .dropdown-content a {
+        text-align: center;
+    }
+       
+      }
+
